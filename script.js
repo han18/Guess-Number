@@ -20,6 +20,6 @@ document.querySelector(".check").addEventListener("click", function () {
   } else if (guessNum > secretNumber) {
     document.querySelector(".message").textContent = "Too High";
   } else if (guessNum < secretNumber) {
-    document.querySelector(".message").textContent = "Too Low";
+    document.querySelector(".message").textContent = "Too Low!";
   }
 });
