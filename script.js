@@ -27,14 +27,14 @@ document.querySelector(".check").addEventListener("click", function () {
   } else if (guessNum === secretNumber) {
     document.querySelector(".message").textContent = "You WON!";
   } else if (guessNum > secretNumber) {
-    scoreRepeat();
+    scoreRepeat(); // this is a declared function used to for repeated text
   } else if (guessNum < secretNumber) {
-    if (scoreCheck > 0) {
+    if (scoreCheck > 1) {
       document.querySelector(".message").textContent = "Too Low!";
       scoreCheck--;
       document.querySelector(".score").textContent = scoreCheck;
     } else {
-      document.querySelector(".message").textContent = "YOU LOST!";
+      document.querySelector(".message").textContent = " 🔴  YOU LOST!";
     }
   }
 });
