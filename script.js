@@ -1,9 +1,10 @@
 "use strict";
 
+const div = document.getElementById("div");
 document.querySelector(".number").textContent = "❖";
 document.querySelector(".score").textContent = "20";
 
-const secretNumber = Math.trunc(Math.random() * 10) + 1;
+const secretNumber = Math.trunc(Math.random() * 10) + 1; // the 1 is to make it exactly 10 choices
 document.querySelector(".number").textContent = secretNumber;
 
 // creating a variable decrease the number of times a user plays
@@ -38,5 +39,3 @@ document.querySelector(".check").addEventListener("click", function () {
     }
   }
 });
-
-// my own code
